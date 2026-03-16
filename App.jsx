@@ -277,7 +277,7 @@ function App() {
         >
           {chartLabels[i]}
         </text>
-        <text x={xPos + (barWidth / 2)} y={150-h-10} textAnchor="middle" fontSize="12" className="fill-theme-primary font-black opacity-0 group-hover:opacity-100 transition-opacity">{val}</text>
+        <text x={xPos + (barWidth / 2)} y={150-h-10} textAnchor="middle" fontSize="10" className="fill-theme-primary font-black opacity-0 group-hover:opacity-100 transition-opacity">{val}</text>
       </g>
     );
   })}
