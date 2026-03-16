@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #065f46;
+  --primary-hover: #064e3b;
+  --accent: #d4af37;
+  --bg-main: #f0fdf4;
+  --card-bg: #ffffff;
+  --text-main:#022c22;
+}
+
+@layer utilities {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .bg-theme-primary { background-color: var(--primary); }
+  .bg-theme-accent{ background-color: var(--accent); }
+  .text-theme-accent { color: var(--accent); }
+  .text-theme-primary { color: var(--primary); }
+  .bg-theme-main { background-color: var(--bg-main); }
+}
