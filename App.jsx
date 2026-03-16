@@ -269,11 +269,13 @@ function App() {
           className="transition-all duration-1000 ease-out hover:opacity-80 cursor-help"
         />
         <text 
-          x={xPos + (barWidth / 2)} // Center text under the whole bar space
+          x={xPos + (barWidth / 2)} 
           y="180" 
-          textAnchor="middle" 
-          fontSize="10" 
-          className="fill-slate-300 font-bold"
+          textAnchor="end" // Changed to 'end' for better alignment when rotated
+          fontSize="9" 
+          className="fill-slate-400 font-bold"
+          /* Add this transform line below */
+          transform={`rotate(-45, ${xPos + (barWidth / 2)}, 180)`}
         >
           {chartLabels[i]}
         </text>
